@@ -8,6 +8,9 @@ let todoSchema = new Schema({
     },
     description: {  
          type: String
+    },
+    priority: {
+        type: String
     }
 }, {
     // collection (DB no-relacional) -> tabla (DB relacional)

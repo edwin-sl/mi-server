@@ -21,8 +21,6 @@ const todoService = {
                 response.status(200).json(data)
             }
         })
-
-        // response.json({})
     },
 
     readTodo: (request, response) => {
@@ -33,8 +31,6 @@ const todoService = {
                 response.status(200).json(data)
             }
         })
-
-        // response.json({})
     },
 
     readTodos: (request, response) => {
@@ -45,7 +41,6 @@ const todoService = {
                 response.status(200).json(data)
             }
         })
-        // response.json([])
     },
 
     updateTodo: (request, response) => {
@@ -58,7 +53,6 @@ const todoService = {
                 response.status(200).json(data)
             }
         })
-        // response.json({})
     },
 
     deleteTodo: (request, response) => {
@@ -69,9 +63,7 @@ const todoService = {
                 response.status(200).json(data)
             }
         })
-        // response.json({})
     }
 }
-
 
 module.exports = todoService

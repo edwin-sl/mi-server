@@ -28,44 +28,28 @@ app.use(cors())
 // param2 = funcion de la ruta
 
 // CRUD (Create Read Update Delete) - ABC (Altas Bajas Cambios)
-// TODO: crear api
 app.post('/api/create-todo', (request, response) => {
-    console.log('PARAMS ->', request.params)
-    console.log('QUERYSTRING -> ', request.query)
-    console.log('BODY -> ', request.body)
-    // response.send('Crear TODO')
+    console.log('REQUEST ->', {url: request.url, params: request.params, query: request.query, body: request.body})
     todoService.createTodo(request, response)
 })
 
 app.get('/api/read-todo/:id', (request, response) => {
-    console.log('PARAMS ->', request.params)
-    console.log('QUERYSTRING -> ', request.query)
-    console.log('BODY -> ', request.body)
-    // response.send('Read TODO')
+    console.log('REQUEST ->', {url: request.url, params: request.params, query: request.query, body: request.body})
     todoService.readTodo(request, response)
 })
 
 app.get('/api/read-todo', (request, response) => {
-    console.log('PARAMS ->', request.params)
-    console.log('QUERYSTRING -> ', request.query)
-    console.log('BODY -> ', request.body)
-    // response.send('Read TODOS')
+    console.log('REQUEST ->', {url: request.url, params: request.params, query: request.query, body: request.body})
     todoService.readTodos(request, response)
 })
 
 app.put('/api/update-todo/:id', (request, response) => {
-    console.log('PARAMS ->', request.params)
-    console.log('QUERYSTRING -> ', request.query)
-    console.log('BODY -> ', request.body)
-    // response.send('Update TODO')
+    console.log('REQUEST ->', {url: request.url, params: request.params, query: request.query, body: request.body})
     todoService.updateTodo(request, response)
 })
 
 app.delete('/api/delete-todo/:id', (request, response) => {
-    console.log('PARAMS ->', request.params)
-    console.log('QUERYSTRING -> ', request.query)
-    console.log('BODY -> ', request.body)
-    // response.send('Delete TODO')
+    console.log('REQUEST ->', {url: request.url, params: request.params, query: request.query, body: request.body})
     todoService.deleteTodo(request, response)
 })
 
